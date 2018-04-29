@@ -91,6 +91,67 @@ nav li a:hover {
 nav .hamburger{
     display: none;
 }
+.page-title-wrap {
+	background-color: #8cc63f;
+	grid-column: 1/13;
+	margin-top: 5.5em;
+	height: 5em;
+}
+.page-title {
+	background-color: #125fad;
+	width: 80%;
+	height: 5em;
+	margin-top: -2em;
+}
+.page-title h1 {
+	color: #8cc63f;
+	font-size: 3em;
+	padding-left: 21%;
+	padding-top: .25em;
+}
+form {
+	grid-column: 4/10;
+}
+input {
+	border-radius: .5em;
+	padding: .5em;
+	width: 100%;
+}
+.form-wrap {
+	grid-column: 4/10;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.form-wrap input {
+	border-radius: .5em;
+	padding: .5em;
+	width: 100%;
+	margin-bottom: 2em;
+	box-sizing: border-box
+}
+.form-wrap label {
+	color: #8cc63f;
+	font-weight: 700;
+	font-size: 1.5em;
+	width: 100%;
+}
+.form-wrap button {
+	font-family: 'Asap', sans-serif; 
+	font-weight: 700;
+	background-color: #144575;
+	color: #8cc63f;
+	border-radius: .5em;
+	font-size: 1.5em;
+	padding: .25em .5em;
+	width: 100%;
+	float: left;
+	background: linear-gradient(#1660ad, #144675, #1660ad);
+	cursor: pointer;
+}
+.epmty-space {
+	grid-column: 1/13;
+	height: 200px;
+}
 /* ################# Banner Elements ################# */
 .banner-wrap {
 	display: grid;
@@ -155,6 +216,186 @@ nav .hamburger{
 	text-align: center;
 	box-sizing: border-box;
 }
+/* ################# MyList Page Elements ################# */
+.mylist-banner-wrap {
+	grid-column: 1/13;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	background-color: #125fad;
+	margin-top: 5.5em;
+	border-bottom: #0d3151 solid .1em;
+}
+.mylist-banner-user {
+	grid-column: 1/9;
+	background-color: #125fad;
+}
+.mylist-banner-add {
+	grid-column: 9/13;
+	background-color: #8cc63f;
+}
+.mylist-user-pic {
+	width: 12em;
+	height: 12em;
+	border: #0d3151 solid .2em;
+	margin: 2em 2em 2em 25%;
+	border-radius: 1em;
+	overflow: hidden;
+	float: left
+}
+.mylist-user-pic img {
+	width: 100%;
+}
+.user-info {
+	color: #8cc63f;
+	float: left;
+	margin-top: 2em;
+}
+.user-info h2 {
+	color: #8cc63f;
+	font-size: 2.5em;
+	margin: .75em 0 0 0;
+}
+.user-info button {
+	font-family: 'Asap', sans-serif; 
+	font-weight: 700;
+	background-color: #144575;
+	color: #8cc63f;
+	border-radius: .5em;
+	font-size: 1em;
+	padding: .25em .5em;
+	background: linear-gradient(#1660ad, #144675, #1660ad);
+	cursor: pointer;
+	margin-top: 1.5em;
+}
+.mylist-banner-add button {
+	font-family: 'Asap', sans-serif; 
+	font-weight: 700;
+	background-color: #144575;
+	color: #8cc63f;
+	border-radius: .5em;
+	font-size: 1.6em;
+	background: linear-gradient(#1660ad, #144675, #1660ad);
+	cursor: pointer;
+	margin: 1.8em 20% 0 20%;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	width: 60%;
+}
+.prescription-list-wrap {
+	grid-column: 3/6;
+}
+.prescription-list-wrap h2 {
+	color: #125fad;
+	padding-bottom: .25em;
+	border-bottom: #125fad solid .1em;
+}
+.prescription-list-wrap ul {
+	margin: 0;
+	padding: 0;
+}
+.prescription-list-wrap li {
+    font-size: 1.15em;
+    font-weight: 700;
+	list-style: none;
+	padding: 0 0 1em 0;
+	margin: 0;
+    color: #8cc63f;
+}
+.prescription-list-wrap li a:link{
+    color: #8cc63f;
+	transition: color 0.3s ease;
+}
+.prescription-list-wrap li a:active{
+    color: #8cc63f;
+}
+.prescription-list-wrap li a:visited{
+    color: #8cc63f;
+}
+.prescription-list-wrap li a:hover{
+    color: #125fad;
+}
+.calendar-wrap {
+	grid-column: 6/12;
+}
+.calendar-wrap img {
+	width: 100%;
+}
+.calendar-wrap h2 {
+	color: #125fad;
+	padding-bottom: .25em;
+	margin-left: 1em;
+	border-bottom: #125fad solid .1em;
+}
+/* ################# Groups ################# */
+.groups-wrap {
+	grid-column: 3/11;
+	padding-bottom: 2em;
+}
+.group {
+	margin: 2em 2% 0 2%;
+	width: 29.3%;
+	float: left;
+	height: 15em;
+	border-radius: 1em;
+}
+.group h2 {
+	color: #0d3151;
+	font-size: 1.5em;
+	margin: .25em .5em 0 .5em;
+	border-bottom: #8cc63f solid .1em;
+}
+.group p {
+	color: #0d3151;
+	font-size: 1em;
+	margin: 1em .5em 0 .5em;
+}
+.group button {
+	font-family: 'Asap', sans-serif; 
+	font-weight: 700;
+	background-color: #144575;
+	color: #8cc63f;
+	border-radius: .5em;
+	font-size: 1em;
+	padding: .25em .5em;
+	width: 60%;
+	margin: 1em .5em 0 .5em;
+	background: linear-gradient(#1660ad, #144675, #1660ad);
+	cursor: pointer;
+}
+/* ################# Single Group ################# */
+.single-group-wrap {
+	grid-column: 3/11;
+	padding-bottom: 2em;
+}
+.single-group {
+	width: 100%;
+	margin-bottom: 2.5em;
+}
+.single-group h2 {
+	color: #0d3151;
+	font-size: 1.5em;
+	margin: .25em .5em 0 .5em;
+	border-bottom: #8cc63f solid .1em;
+}
+.single-group p {
+	color: #0d3151;
+	font-size: 1em;
+	margin: 1em .5em 0 .5em;
+}
+.single-group button {
+	font-family: 'Asap', sans-serif; 
+	font-weight: 700;
+	background-color: #144575;
+	color: #8cc63f;
+	border-radius: .5em;
+	font-size: 1em;
+	padding: .25em .5em;
+	width: 60%;
+	margin: 1em .5em 0 .5em;
+	background: linear-gradient(#1660ad, #144675, #1660ad);
+	cursor: pointer;
+}
 /* ################# Modules ################# */
 .module-left {
 	grid-column: 3/5;
@@ -218,7 +459,7 @@ nav .hamburger{
 	padding: 0;
 }
 .footer-nav li {
-	 font-size: 1em;
+	font-size: 1em;
     font-weight: 400;
 	list-style: none;
     color: #8cc63f;margin-bottom: 1em;
@@ -285,8 +526,34 @@ nav .hamburger{
 		font-size: 2em;
 	}
 	.button-wrap {
-	height: 2.5em;
+		height: 2.5em;
 	}
+	.mylist-user-pic {
+		margin: 2em 1.5em 2em 20%;
+		border-radius: 1em;
+		overflow: hidden;
+		float: left
+	}
+	.user-info h2 {
+		color: #8cc63f;
+		font-size: 2em;
+		margin: .75em 0 0 0;
+	}
+	.mylist-banner-add button {
+		font-size: 1.4em;
+		margin: 2.2em 15% 0 15%;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		width: 70%;
+		box-sizing: border-box;
+	}
+	.group {
+	height: 19em;
+	}
+	.group h2 {
+		font-size: 1.5em;
+	}
+	
 }
 
 @media only screen and (max-width: 1000px) {
@@ -294,18 +561,26 @@ nav .hamburger{
         padding-right: 2em;
     }
 	header{
-  	grid-template-areas: 
-    "logo logo logo logo logo logo nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar";
+		grid-template-areas: 
+		"logo logo logo logo logo logo nav-bar nav-bar nav-bar nav-bar nav-bar nav-bar";
 	}
 	.logo {
-	padding-left: 2em;
+		padding-left: 2em;
 	}
 	.banner-signup {
-	margin-top: 5em;
-	margin-bottom: 5em;
+		margin-top: 5em;
+		margin-bottom: 5em;
 	}
 	.banner-signup h2 {
 		font-size: 3em;
+	}
+	.mylist-user-pic {
+		margin: 2em 1.5em 2em 5%;
+	}
+	.group {
+		margin: 2em 4% 0 4%;
+		width: 42%;
+		height: 15em;
 	}
 }
 @media only screen and (max-width: 907px) {
@@ -322,18 +597,39 @@ nav .hamburger{
 		font-size: 1.15em;
 	}
 	.button-wrap {
-	height: 2em;
+		height: 2em;
 	}
+	.mylist-banner-add button {
+		font-size: 1.2em;
+		margin: 2.7em 15% 0 15%;
+		padding-top: .7em;
+		padding-bottom: .7em;
+	}
+	.user-info h2 {
+		font-size: 1.7em;
+		margin: .75em 0 0 0;
+	}
+	.group {
+	height: 22em;
+	}
+	.group h2 {
+		font-size: 1.2em;
+	}
+	.group button {
+	font-size: 1em;
+	width: 80%;
+	}
+	
 }
 @media only screen and (max-width: 800px) {
 	nav .hamburger{
-	float: right;
-	padding-right: 2em;
-	padding-top: .5em;
-	display: block;
+		float: right;
+		padding-right: 2em;
+		padding-top: .5em;
+		display: block;
 	}
 	.menu-bar {
-	display: none;
+		display: none;
 	}
 	.banner-signup h2 {
 		font-size: 2.25em;
@@ -345,39 +641,90 @@ nav .hamburger{
 		font-size: 1em;
 	}
 	.banner-signup {
-	margin-top: 3.5em;
-	margin-bottom: 3.5em;
-	grid-column: 3/11;
-
+		margin-top: 3.5em;
+		margin-bottom: 3.5em;
+		grid-column: 3/11;
 	}
 	.button-wrap {
 		margin-bottom: 2em;
 	}
 	.button-wrap {
-	height: 1.5em;
+		height: 1.5em;
 	}
 	.module-left {
-	grid-column: 3/11;
+		grid-column: 3/11;
 	}
 	.module-center {
-	grid-column: 3/11;
+		grid-column: 3/11;
 	}
 	.module-right {
-	grid-column: 3/11;
+		grid-column: 3/11;
 	}
 	.footer-logo {
-	grid-column: 2/12;
-	margin-top: .25em;
+		grid-column: 2/12;
+		margin-top: .25em;
 	}
 	.footer-contact {
-	grid-column: 2/12;
-	padding-left: 1em;
-	text-align: center;
+		grid-column: 2/12;
+		padding-left: 1em;
+		text-align: center;
 		margin-bottom: 1em;
 	}
 	.footer-nav {
-	grid-column: 2/12;
-	text-align: center;
+		grid-column: 2/12;
+		text-align: center;
+	}
+	.mylist-banner-user {
+		grid-column: 1/13;
+		background-color: #125fad;
+	}
+	.mylist-banner-add {
+		grid-column: 1/13;
+		background-color: #8cc63f;
+		padding-bottom: 2.5em;
+	}
+	.mylist-user-pic {
+		width: 15%;
+		height: 15%;
+		border: #0d3151 solid .2em;
+		margin: 2em 42.5% 0 42.5%;
+		border-radius: 1em;
+		overflow: hidden;
+		float: none;
+	}
+	.user-info {
+		color: #8cc63f;
+		float: left;
+		margin-top: .1em;
+		width: 100%;
+		text-align: center;
+	}
+	.user-info h2 {
+		width: 100%;
+		font-size: 2em;
+		margin: .25em 0 0 0;
+		text-align: center;
+	}
+	.user-info button {
+		font-size: 1em;
+		padding: .25em .5em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.mylist-banner-add button {
+		font-size: 1.6em;
+		margin: 1.8em 15% 0 15%;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		width: 70%;
+	}
+	.group {
+		margin: 2em 0 0 0;
+		width: 100%;
+		height: 15em;
+	}
+	.epmty-space {
+	height: 20px;
 	}
 
 }
